@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classtext1 {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Latihan Jquery</h1>
+
+    <div id="text1"></div>
+    <div id="text2"></div>
+    <input id="textinput">
+    <img>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#text1').text('halo, selamat pagi');
+        $('#text2').html('<span>halo</span>');
+        $('#text1').css('color','red');
+        // var nama = 'nama baru';
+        // $('#text1').text(nama);
+        $('#text1').append('<p id="test">Test</p>');
+        $('#text1').prepend('<p>Test prepend</p>');
+        $('img').attr('src', 'https://cdn1-production-images-kly.akamaized.net/CSJxlFqdp304py2TNTYsqRb80Ys=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3111527/original/094671000_1587729326-Keluarga_Somat_Landscape.jpg');
+        $('#test').hide();
+        $('#test').show();
+        $('#text1').addClass('classtext1');
+        $('#text1').removeClass('classtext1');
+        var checkClass = $('#text1').hasClass('classtext1');
+        console.log(checkClass);
+        $('#textinput').val('horee, istirahat');
+    </script>
+</body>
+
+</html>
